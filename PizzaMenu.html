@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Brian's Pizza</title>
+
+<style>
+#main{
+width:960px;
+margin:50px auto;
+font-family:raleway;
+background-image: url("https://dcassetcdn.com/design_img/75540/66092/66092_1336604_75540_image.jpg");
+}
+
+span{
+color:red;
+}
+h2{
+background-color: #FEFFED;
+text-align:center;
+border-radius: 10px 10px 0 0;
+margin: -10px -40px;
+padding: 15px;
+}
+hr{
+border:0;
+border-bottom:1px solid #ccc;
+margin: 10px -40px;
+margin-bottom: 30px;
+}
+select{
+width:99.5%;
+padding: 10px;
+margin-top: 8px;
+border: 1px solid #ccc;
+padding-left: 5px;
+font-size: 16px;
+font-family:raleway;
+}
+</style>
+
+</head>
+<body>
+
+<div id="main">
+
+<div id="container">
+<h2>BRIAN'S PIZZA SHOP</h2>
+<hr/>
+
+
+<form action="process.php" method="post">
+<label>Select Pizza Size :</label>
+<select name="pizza_type" >
+<option value="10">Small Pizza - $10.00</option>
+<option value="15">Medium Pizza - $15.00</option>
+<option value="20">Large Pizza - $20.00</option>
+</select>
+<br><br>
+
+<center><h3>Add Toppings which you want. </h3></center>
+<div id="checkbox_container">
+
+<div id="chk">
+<p>Onion</p>
+<input class ="chk1" type='checkbox' name='topping1' value='2.00' id="topping1"/><label class ="chk1" for="topping1"></label>
+<p>$2.00</p>
+</div>
+
+<div id="chk">
+<p>Peppers</p>
+<input class ="chk2" type='checkbox' name='topping2' value='3.00' id="topping2"/><label class ="chk2" for="topping2"></label>
+<p>$3.00</p>
+</div>
+
+<div id="chk">
+<p>Mushrooms</p>
+<input class ="chk3" type='checkbox' name='topping3' value='2.25' id="topping3"/><label class ="chk3" for="topping3"></label>
+<p>$2.25</p>
+</div>
+
+<div id="chk">
+<p>cheese</p>
+<input class ="chk4" type='checkbox' name='topping4' value='3.50' id="topping4"/><label class ="chk4" for="topping4"></label>
+<p>$3.50</p>
+</div>
+</div>
+<input type="submit" value=" CHECKOUT " name="submit">
+</form>
+</div>
+
+
+</body>
+</html>
